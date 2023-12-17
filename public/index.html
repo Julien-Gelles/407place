@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>407Place</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./place.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://cdn.glitch.global/441cb9ad-909f-4db2-844d-259dcdbc2bb1/cursor.png?v=1671569199131"
+    />
+  </head>
+  <body>
+    <div id="loadingScreen"></div>
+    <div id="loading">
+      <div class="loadingGrid">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <p class="loadingText">Loading ...</p>
+    </div>
+
+    <ul class="menu">
+      <li>
+        <a style="background-color: #492914" id="darkBrown"></a>
+      </li>
+      <li>
+        <a style="background-color: #7a3f17" id="brown"></a>
+      </li>
+      <li>
+        <a style="background-color: #bc1a1a" id="red"></a>
+      </li>
+      <li>
+        <a style="background-color: #ca541d" id="darkOrange"></a>
+      </li>
+      <li>
+        <a style="background-color: #ffa928" id="orange"></a>
+      </li>
+      <li>
+        <a style="background-color: #ffeb35" id="yellow"></a>
+      </li>
+      <li>
+        <a style="background-color: #83bc1a" id="lightGreen"></a>
+      </li>
+      <li>
+        <a style="background-color: #1ea711" id="green"></a>
+      </li>
+      <li>
+        <a style="background-color: #096800" id="darkGreen"></a>
+      </li>
+      <li>
+        <a style="background-color: #01b185" id="cyan"></a>
+      </li>
+      <li>
+        <a style="background-color: #78d4ff" id="lightBlue"></a>
+      </li>
+      <li>
+        <a style="background-color: #3861eb" id="blue"></a>
+      </li>
+      <li>
+        <a style="background-color: #01259c" id="darkBlue"></a>
+      </li>
+      <li>
+        <a style="background-color: #520072" id="darkPurple"></a>
+      </li>
+      <li>
+        <a style="background-color: #8e1abc" id="purple"></a>
+      </li>
+      <li>
+        <a style="background-color: #bc1aa6" id="pink"></a>
+      </li>
+      <li>
+        <a style="background-color: #ffa8f3" id="lightPink"></a>
+      </li>
+      <li>
+        <a style="background-color: #f6e1cf" id="beige"></a>
+      </li>
+      <li>
+        <a style="background-color: #fafafa" id="white"></a>
+      </li>
+      <li>
+        <a style="background-color: #a5a2a2" id="lightGrey"></a>
+      </li>
+      <li>
+        <a style="background-color: #636060" id="grey"></a>
+      </li>
+      <li>
+        <a style="background-color: #0e0d0d" id="black"></a>
+      </li>
+    </ul>
+
+    <div class="axes">
+      <p>X:</p>
+      <p id="x-coord">-</p>
+      <p>Y:</p>
+      <p id="y-coord">-</p>
+    </div>
+
+    <div id="zoom_outer">
+      <div id="zoom">
+        <canvas width="5000" height="5000" id="canvas2"></canvas>
+        <canvas width="5000" height="5000" id="canvas"></canvas>
+      </div>
+    </div>
+    <div class="commands">
+      <p class="croix">✖</p>
+      <div>
+        <p>Place the cursor</p>
+        <img
+          src="https://cdn.glitch.global/441cb9ad-909f-4db2-844d-259dcdbc2bb1/mouseL.png?v=1671577532772"
+          height="50"
+          width="50"
+        />
+      </div>
+      <div>
+        <p>Move/Zoom the canvas</p>
+        <img
+          src="https://cdn.glitch.global/441cb9ad-909f-4db2-844d-259dcdbc2bb1/mouseM.png?v=1671577536702"
+          height="50"
+          width="50"
+        />
+      </div>
+      <div>
+        <p>Place selected color</p>
+        <img
+          src="https://cdn.glitch.global/441cb9ad-909f-4db2-844d-259dcdbc2bb1/mouseR.png?v=1671577538678"
+          height="50"
+          width="50"
+        />
+      </div>
+    </div>
+  </body>
+</html>
