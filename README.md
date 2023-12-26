@@ -58,7 +58,7 @@ DB_STRING = 'mongodb+srv://username:password@cluster0.nvr1sil.mongodb.net/?retry
 
 Alternatively, feel free to modify the code below as you prefer :
 
-<img src="img/mongoSetup.jpg">
+<img src="img/mongoSetup.png">
 
 ### Run
 
@@ -73,7 +73,7 @@ $ npm start
 
 Users can choose from a variety of colors to draw on the canvas, which are the same as the default colors in the [Pixeliser project](https://github.com/Julien-Gelles/Pixeliser).
 
-<img src="img/colors.jpg">
+<img src="img/colors.png">
 
 ## Features
 
