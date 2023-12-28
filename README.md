@@ -47,7 +47,7 @@ If you wish to execute the code independently, you'll need to establish your own
 
 - Create a database named **`canvas`**.
 - Set up a collection named **`tiles`**.
-- Include an entry with a key named **`_id`** set to **`1`** and a corresponding value named **`t`**.
+- The canvas entry should have a key named **`_id`** set to **`1`** and the corresponding value named **`t`**.
 
 Finally, make sure to set up the MongoDB connection string in a **.env** file :
 
