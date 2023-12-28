@@ -56,7 +56,7 @@ DB_STRING = 'mongodb+srv://username:password@cluster0.nvr1sil.mongodb.net/?retry
 ```
 
 
-Alternatively, feel free to modify the code below as you prefer :
+Alternatively, feel free to modify the code below in `server.js` , as you prefer :
 
 <img src="img/mongoSetup.png">
 
