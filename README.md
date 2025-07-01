@@ -1,6 +1,9 @@
 <h1 align="center">
 407PLACE
+  
+![Project Status](https://img.shields.io/badge/status-inactive-red)
 </h1>
+
 
 <p align="center">
 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"></a>
@@ -23,7 +26,8 @@
 This project is a real-time community canvas where you can only draw pixels of colors, creating pixel art. It's my own version of the subreddit r/place.<br>
 It uses Socket.IO to manage real-time communication between the server and clients and MongoDB to store canvas datas.
 
-Freely hosted on **[Glitch](https://glitch.com/)** and available at the web address: **https://407place.glitch.me**
+~~Freely hosted on **[Glitch](https://glitch.com/)** and available at the web address: **https://407place.glitch.me**~~
+(**2025 edit : No more available**)
 
 
 ## How To Use
